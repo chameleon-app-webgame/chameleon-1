@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(167.96deg, #C2FFDD 0%, #3BD275 47.6%, #005124 100%);
+}
+
+.background-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.background-layer {
+  position: absolute;
+  opacity: 9%; /* как фон */
+  pointer-events: none; /* чтобы не мешали кликам */
+}
+.cham1 {
+  bottom: 5%;
+  right: -20px;
+  width: 393px;
+  height: 465px;
+  top: -133px;
+  left: 470.66px;
+transform: rotate(-15deg) scaleX(-1);
+
+}
+.cham2 {
+  left: -182px;
+  top: 304px;
+  width: 200px;
+}
+.container {
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  background-color: #1c1c1c;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  color: #6EE58C; /* цвет "CHAMELEON" */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1c1c1c;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.how-to-play {
+  font-size: 12px;
+  padding: 10px 16px;
+}
