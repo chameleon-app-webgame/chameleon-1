@@ -1,3 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 body {
   margin: 0;
   padding: 0;
@@ -122,10 +131,10 @@ body.light .language {
 }
 
 .container2 {
-  height: auto;
+  height: 190px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
 }
 .btn3 {
   display: flex;
@@ -142,9 +151,6 @@ body.light .language {
   font-size: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 70px;
 }
 .theme {
   display: flex;
