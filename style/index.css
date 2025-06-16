@@ -122,10 +122,10 @@ body.light .language {
 }
 
 .container2 {
-  height: 190px;
+  height: auto;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 .btn3 {
   display: flex;
@@ -142,6 +142,9 @@ body.light .language {
   font-size: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 70px;
 }
 .theme {
   display: flex;

@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyTheme(theme) {
     document.body.classList.remove("light", "dark");
     document.body.classList.add(theme);
-    themeIcon.src = theme === "dark" ? "img/sun.png" : "img/moon2.png";
+    themeIcon.src = theme === "dark" ? "../img/sun.png" : "../img/moon2.png";
     updateLanguageIcon(currentLang, theme);
   }
 
@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // === СМЕНА ИКОНКИ ЯЗЫКА В ЗАВИСИМОСТИ ОТ ТЕМЫ ===
   function updateLanguageIcon(lang, theme) {
     if (lang === "ru") {
-      langIcon.src = theme === "dark" ? "img/en.png" : "img/en (1).png";
+      langIcon.src = theme === "dark" ? "../img/en.png" : "../img/en (1).png";
     } else {
-      langIcon.src = theme === "dark" ? "img/ru.png" : "img/ru (1).png";
+      langIcon.src = theme === "dark" ? "../img/ru.png" : "../img/ru (1).png";
     }
   }
 });
