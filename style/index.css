@@ -135,6 +135,7 @@ body.light .language {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-bottom: 60px;
 }
 .btn3 {
   display: flex;
