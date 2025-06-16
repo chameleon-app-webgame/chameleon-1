@@ -7,7 +7,7 @@ body {
   font-family: 'Russo One' sans-serif;
   
   background-image: 
-    url('/img/Group1.png');
+    url('/chameleon-1/img/Group1.png');
   
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,11 +15,11 @@ body {
   transition: 0.5s ease, color 0.5s ease;
 }
 body.dark {
-  background-image: url('/img/Group1.png'), linear-gradient(167.96deg, #2A2A2A 0%, #0A0A0A 100%);
+  background-image: url('/chameleon-1/img/Group1.png'), linear-gradient(167.96deg, #2A2A2A 0%, #0A0A0A 100%);
   color: white;
 }
 body.light {
-  background-image: url('/img/Group1.png'), linear-gradient(167.96deg, #ffffff 0%, #3BD275 47.6%, #005124 100%);
+  background-image: url('/chameleon-1/img/Group1.png'), linear-gradient(167.96deg, #ffffff 0%, #3BD275 47.6%, #005124 100%);
   color: black;
 }
 
