@@ -2,14 +2,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url('') no-repeat center center fixed;
-  background-size: cover;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(167.96deg, #C2FFDD 0%, #3BD275 47.6%, #005124 100%);
+  font-family: 'Russo One' sans-serif;
+  
+  background-image: 
+    url('/img/Group 1.png');
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease, color 0.5s ease;
+}
+body.dark {
+  background-image: url('/img/Group 1.png'), linear-gradient(167.96deg, #2A2A2A 0%, #0A0A0A 100%);
+  color: white;
+}
+body.light {
+  background-image: url('/img/Group 1.png'), linear-gradient(167.96deg, #ffffff 0%, #3BD275 47.6%, #005124 100%);
+  color: black;
 }
 
 .background-layer {
@@ -22,35 +33,48 @@ body {
   opacity: 9%; /* как фон */
   pointer-events: none; /* чтобы не мешали кликам */
 }
-.cham1 {
-  bottom: 5%;
-  right: -20px;
-  width: 393px;
-  height: 465px;
-  top: -133px;
-  left: 470.66px;
-transform: rotate(-15deg) scaleX(-1);
 
+.bar {
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
-.cham2 {
-  left: -182px;
-  top: 304px;
-  width: 200px;
+.theme, .language {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
 }
+/* Цвет для тёмной темы */
+body.dark .theme,
+body.dark .language {
+  background-color: #77DF9F;
+}
+/* Цвет для светлой темы */
+body.light .theme,
+body.light .language {
+  background-color: #2F2F2F;
+}
+
 .container {
   text-align: center;
   color: white;
   width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
-  font-size: 24px;
-  background-color: #1c1c1c;
   display: inline-block;
-  padding: 8px 20px;
-  border-radius: 6px;
-  margin-bottom: 30px;
-  color: #6EE58C; /* цвет "CHAMELEON" */
+  margin-bottom: 50px;
+  width: 100vw;
 }
 
 .buttons {
@@ -60,22 +84,80 @@ transform: rotate(-15deg) scaleX(-1);
   margin-bottom: 60px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #1c1c1c;
+.btn1 {
+  display: flex;
+  background-color: #2F2F2F;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
   font-weight: bold;
   transition: 0.3s ease;
+  width: 169px;
+  height: 79px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+.narrow-text {
+  display: inline-block;
+  transform: scaleX(0.8); /* сжатие текста */
+}
+.btn2 {
+  display: flex;
+  background-color: #2F2F2F;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  width: 169px;
+  height: 79px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
 }
 
-.btn:hover {
-  background-color: #333;
+.container2 {
+  height: 190px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-
-.how-to-play {
-  font-size: 12px;
-  padding: 10px 16px;
+.btn3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2F2F2F;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  width: 175px;
+  height: 51px;
+  font-weight: 700;
+  font-size: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.themeicon {
+  width: 30px;
+  height: 30px;
+}
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.languageicon {
+  width: 22px;
+  height: 22px;
 }
