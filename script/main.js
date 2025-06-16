@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // === СМЕНА ИКОНКИ ЯЗЫКА В ЗАВИСИМОСТИ ОТ ТЕМЫ ===
   function updateLanguageIcon(lang, theme) {
     if (lang === "ru") {
-      langIcon.src = theme === "dark" ? "/img/en.png" : "/img/en1.png";
+      langIcon.src = theme === "dark" ? "/img/EN.png" : "/img/EN1.png";
     } else {
-      langIcon.src = theme === "dark" ? "/img/ru.png" : "/img/ru1.png";
+      langIcon.src = theme === "dark" ? "/img/RU.png" : "/img/RU1.png";
     }
   }
 });
