@@ -50,6 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add(theme);
     themeIcon.src = theme === "dark" ? "img/sun.png" : "img/moon2.png";
     updateLanguageIcon(currentLang, theme);
+    
+    const themeMetaTag = document.querySelector('meta[name="theme-color"]');
+    if (themeMetaTag) {
+        themeMetaTag.setAttribute("content", theme === "dark" ? "#0A0A0A" : "#005124");
+    }
   }
 
   // === ПРИМЕНИТЬ ЯЗЫК ===
