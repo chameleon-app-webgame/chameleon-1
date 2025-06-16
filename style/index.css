@@ -28,7 +28,7 @@ body.dark {
   color: white;
 }
 body.light {
-  background-image: url('/chameleon-1/img/Group1.png'), linear-gradient(167.96deg, #ffffff 0%, #3BD275 47.6%, #005124 100%);
+  background-image: url('/chameleon-1/img/Group1.png'), linear-gradient(167.96deg, #FFFFFF 0%, #77DF9F 41.35%, #274834 100%);
   color: black;
 }
 
@@ -106,7 +106,7 @@ body.light .language {
   border-bottom-right-radius: 20px;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
 }
 .narrow-text {
@@ -126,7 +126,7 @@ body.light .language {
   border-bottom-left-radius: 20px;
   justify-content: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
 }
 
