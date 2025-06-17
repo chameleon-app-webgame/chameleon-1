@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  document
+  .querySelector('meta[name="theme-color"]')
+  .setAttribute("content", "#0A0A0A");
   // === ЯЗЫКОВОЙ СЛОВАРЬ ===
   const translations = {
     en: {
@@ -53,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const themeMetaTag = document.querySelector('meta[name="theme-color"]');
     if (themeMetaTag) {
-        themeMetaTag.setAttribute("content", theme === "dark" ? "#0A0A0A" : "#0A0A0A");
+        themeMetaTag.setAttribute("content", "#0A0A0A");
     }
   }
 
@@ -75,5 +79,12 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       langIcon.src = theme === "dark" ? "/chameleon-1/img/RU.png" : "/chameleon-1/img/RU1.png";
     }
+  }
+
+  // === РЕГИСТРАЦИЯ SERVICE WORKER ===
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log('✅ Service Worker зарегистрирован:', reg.scope))
+      .catch(err => console.error('❌ Ошибка регистрации Service Worker:', err));
   }
 });
