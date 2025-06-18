@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const langBtn = document.getElementById("lang-toggle");
   const langIcon = langBtn.querySelector("img");
 
+
   // === НАСТРОЙКИ ПО УМОЛЧАНИЮ ===
   let currentTheme = localStorage.getItem("theme") || "dark";
   let currentLang = localStorage.getItem("lang") || "en";
@@ -54,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add(theme);
     themeIcon.src = theme === "dark" ? "img/sun.png" : "img/moon2.png";
     updateLanguageIcon(currentLang, theme);
+
     
     const themeMetaTag = document.querySelector('meta[name="theme-color"]');
     if (themeMetaTag) {

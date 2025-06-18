@@ -28,9 +28,7 @@ body.dark {
   color: white;
 }
 body.light {
-  background-image: url('/chameleon-1/img/Group1.png'), linear-gradient(167.96deg, #FFFFFF 0%, #77DF9F 51.92%, #274834 100%);
-;
-;
+  background-image: url('/chameleon-1/img/Group1.png'), linear-gradient(167.96deg, #FFFFFF 0%, #77DF9F 65.38%, #274834 100%);
   color: black;
 }
 
@@ -110,6 +108,7 @@ body.light .language {
   align-items: center;
   font-size: 30px;
   font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
 }
 .narrow-text {
   display: inline-block;
@@ -130,6 +129,7 @@ body.light .language {
   align-items: center;
   font-size: 30px;
   font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container2 {
@@ -154,6 +154,12 @@ body.light .language {
   font-size: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn1:active,
+.btn2:active,
+.btn3:active {
+  filter: brightness(75%);
 }
 .theme {
   display: flex;
