@@ -99,7 +99,6 @@ body.light .language {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s ease;
   width: 169px;
   height: 79px;
   border-top-right-radius: 20px;
@@ -120,7 +119,6 @@ body.light .language {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s ease;
   width: 169px;
   height: 79px;
   border-top-left-radius: 20px;
@@ -147,7 +145,6 @@ body.light .language {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s ease;
   width: 175px;
   height: 51px;
   font-weight: 700;
@@ -159,7 +156,7 @@ body.light .language {
 .btn1:active,
 .btn2:active,
 .btn3:active {
-  filter: brightness(75%);
+  filter: brightness(70%);
 }
 .theme {
   display: flex;

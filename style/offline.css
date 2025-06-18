@@ -78,46 +78,60 @@ html.light .backbutton {
     border-radius: 20px;
 }
 .contain2-1 {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
-    width: 300px;
-    height: 90px;
-    border-radius: 15px;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 90px;
+  border-radius: 15px;
+  margin-top: 15px;
+  background-color: #2F2F2F;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 .contain2-2 {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
-    width: 300px;
-    height: 90px;
-    border-radius: 15px;
-}
-.cont2-1, .cont2-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #2F2F2F;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+.cont2-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 .txt {
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 0px;
-    font-size: 16px;
-    transform: scaleX(0.8);
-    font-weight: 700;
-    transform-origin: left;
-    color: #FFFFFF;
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  transform: scaleX(0.8);
+  transform-origin: left;
+  font-weight: 700;
 }
+
 .pm {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+  display: flex;
+  gap: 5px;
+  margin-top: 6px;
+  margin-left: 15px;
 }
+
+.number {
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+  align-self: center;
+  font-size: 32px;
+  margin-right: 30px;
+}
+
 .minus {
     display: flex;
     justify-content: center;
@@ -141,4 +155,9 @@ html.light .backbutton {
     border: none;
     background-color: #77DF9F;
     margin-left: 5px;
+}
+
+.minus:active,
+.plus:active {
+  filter: brightness(70%);
 }
