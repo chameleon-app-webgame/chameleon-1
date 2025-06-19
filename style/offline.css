@@ -161,3 +161,31 @@ html.light .backbutton {
 .plus:active {
   filter: brightness(70%);
 }
+
+.container3 {
+  height: 190px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+.btn3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2F2F2F;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 175px;
+  height: 51px;
+  font-weight: 700;
+  font-size: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn3:active {
+  filter: brightness(70%);
+}
+

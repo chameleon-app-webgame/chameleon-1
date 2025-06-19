@@ -1,14 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // === Назад кнопка ===
+  // === ТЕМА И НАЗАД КНОПКА ===
   const backBtn = document.getElementById("back-button");
   const backIcon = backBtn?.querySelector("img");
   const currentTheme = localStorage.getItem("theme") || "dark";
-
   if (backIcon) {
     backIcon.src = currentTheme === "dark" ? "img/back.png" : "img/back2.png";
   }
 
-  // === Счётчики игроков и хамелеонов ===
+  // === ПЕРЕВОДЫ (должны быть объявлены раньше, чем applyLang) ===
+  const translations = {
+    en: {
+      playersLabel: "NUMBER OF PLAYERS:",
+      chameleonsLabel: "NUMBER OF CHAMELEONS:",
+      startLabel: "START",
+    },
+    ru: {
+      playersLabel: "КОЛИЧЕСТВО ИГРОКОВ:",
+      chameleonsLabel: "КОЛИЧЕСТВО ХАМЕЛЕОНОВ:",
+      startLabel: "НАЧАТЬ",
+    },
+  };
+
+  // === ЯЗЫК ===
+  const currentLang = localStorage.getItem("lang") || "en";
+  applyLang(currentLang);
+
+  function applyLang(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+  }
+
+  // === СЧЁТЧИКИ ===
   const playerCountEl = document.querySelector(".players-count");
   const chameleonCountEl = document.querySelector(".chameleons-count");
 
@@ -23,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     chameleonCountEl.textContent = chameleons;
   }
 
-  // === Игроки ===
   playerControls.querySelector(".plus").addEventListener("click", () => {
     players++;
     updateUI();
@@ -40,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // === Хамелеоны ===
   chameleonControls.querySelector(".plus").addEventListener("click", () => {
     if (chameleons < players - 1) {
       chameleons++;
@@ -55,6 +79,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Первоначальное обновление UI
   updateUI();
 });
