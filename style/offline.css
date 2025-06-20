@@ -1,3 +1,7 @@
+* {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 100;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -36,7 +40,7 @@ html.light body {
     position: relative;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 118.2px;
 }
 .backbutton {
     display: flex;
@@ -113,7 +117,6 @@ html.light .backbutton {
   margin-bottom: 5px;
   transform: scaleX(0.8);
   transform-origin: left;
-  font-weight: 700;
 }
 
 .pm {
@@ -124,7 +127,6 @@ html.light .backbutton {
 }
 
 .number {
-  font-weight: bold;
   color: white;
   margin-right: 10px;
   align-self: center;
@@ -176,10 +178,8 @@ html.light .backbutton {
   background-color: #2F2F2F;
   color: white;
   text-decoration: none;
-  font-weight: bold;
   width: 175px;
   height: 51px;
-  font-weight: 700;
   font-size: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;

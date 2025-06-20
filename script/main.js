@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     en: {
       onlineBtn: "ONLINE",
       offlineBtn: "OFFLINE",
-      howToPlayBtn: "HOW TO PLAY ?",
+      howToPlayBtn: "GAME RULES",
     },
     ru: {
       onlineBtn: "ОНЛАЙН",
       offlineBtn: "ОФЛАЙН",
-      howToPlayBtn: "КАК ИГРАТЬ ?",
+      howToPlayBtn: "ПРАВИЛА ИГРЫ",
     },
   };
 
